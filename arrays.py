@@ -1,29 +1,6 @@
 
 burns = [
-    "You’re the reason God created the middle finger.",
-    "You’re a grey sprinkle on a rainbow cupcake.",
-    "If your brain was dynamite, there wouldn’t be enough to blow your hat off.",
-    "You are more disappointing than an unsalted pretzel.",
-    "Light travels faster than sound which is why you seemed bright until you spoke.",
-    "We were happily married for one month, but unfortunately we’ve been married for 10 years.",
-    "Your so annoying, you made your Happy Meal cry.",
-    "You have so many gaps in your teeth it looks like your tongue is in jail.",
-    "Your secrets are always safe with me. I never even listen when you tell me them.",
-    "I’ll never forget the first time we met. But I’ll keep trying.",
-    "I forgot the world revolves around you. My apologies, how silly of me.",
-    "I only take you everywhere I go just so I don’t have to kiss you goodbye.",
-    "Hold still. I’m trying to imagine you with personality.",
-    "Our kid must have gotten his brain from you! I still have mine.",
-    "Your face makes onions cry.",
-    "The only way my husband would ever get hurt during an activity is if the TV exploded.",
-    "You look so pretty. Not at all gross, today.",
-    "911, emergency we have spotted shrek, ohh wait never mind it was you.",
-    "If you’re going to be two-faced, at least make one of them pretty.",
-    "You are like a cloud. When you disappear it’s a beautiful day.",
-    "I’d rather treat my baby’s diaper rash than have lunch with you.",
-    "Even with with Mcafee my CPU crumbles in the virus that is your creativity.",
-    "I may love to shop but I will never buy your bull.",
-    "I love what you’ve done with your hair. How do you get it to come out of your nostrils like that?"
+    "enter some jokes"
             ]
 
 hug_links = [
@@ -46,11 +23,8 @@ hug_links = [
             ]
 
 
-bad_words = ["Fuck", "shit", "nig", "fag", "bitc", "slut", "cum", "kum", "bal", "cun"]
-
-no = ["trash", "die", "garb", "ass", "poo", "pee", "suck", "bad", "terrible", "horrid", "horrible", "horrendous", "broken", "broke", "dum", "stupid", "gay", "ugly", "hideous", "moron", "idiot", "bum", "butt", "Fuck", "shit", "nig", "fag", "bitc", "slut", "cum", "kum", "bal", "cun", "no one care", "stinky", "smelly"]
-
 compliments = ["awesome", "great", "good", "well made", "cute", "beaut", "gorg", "smart", "hot", "sweet", "like", "love", "cool"]
+
 compliment_back = ["Your positivity is infectious.",
 "You should be so proud of yourself.",
 "You’re amazing!",
@@ -66,7 +40,7 @@ compliment_back = ["Your positivity is infectious.",
 "You set a great example for everyone around you."
                    ]
 
-dont_say_that = ["That ain't nice...", "refrain from saying those things...", "Close that big mouth of yours...", "Although it isn't a swear its definetly offending someone..."]
+
 moods = ["Pretty cheerful", "quite cheerful", "Joyous", "Voracious", "Happy", " A bit giddy", "Glad im alive"]
 not_here = ["Not in my database.", "Not found in database.", "My program doesnt allow those records to be sent...", "Could not be found...", "Information is not found"]
 
@@ -104,17 +78,15 @@ span = ['Camarón que se duerme se lo lleva la corriente. ',
 jap = ["自業自得", "十人十色", "起死回生", "我田引水", "悪因悪果", "見ぬが花", "弱肉強食"]
 
 brit = ["Alright",
-"I’m knackered",
 "Cheeky",
 "Bloody brilliant",
-"I’m pissed",
 "Hey Mate",
 "Rubbish",
 "Cockney.",
 "Blimey",
-"Bollocks"]
+"Good'ay"]
 
-amer = ["Howdy", "Pass em big macs", "Sweet home alabama", "Piece of cake.",
+amer = ["Howdy", 
 "Scoot over.",
 "Put lipstick on a pig.",
 "Break a leg.",
