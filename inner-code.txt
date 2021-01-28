@@ -1,7 +1,6 @@
 import discord
 from arrays import burns
 from arrays import hug_links
-from arrays import no
 import random
 from arrays import moods
 from arrays import cat_pics
@@ -26,7 +25,7 @@ amount_del = 0
 @client.event
 async def on_ready():
     print("CORTANA ACTIVATED")
-    channel = client.get_channel(784519871857033239)
+    channel = client.get_channel('channel token')
     await channel.send("CORTANA ACTIVATED")
 
 
@@ -42,18 +41,6 @@ async def on_message(message):
             rand_comp = random.choice(compliment_back)
             await message.channel.send(f'{message.author}, {rand_comp}')
 
-    for x in no:
-        if "cortana" in message_content and x in message_content:
-            rand_roast = random.choice(burns)
-            await message.channel.send(f'{message.author}, {rand_roast} :fire:')
-
-    for x in no:
-        if ("aot" in message_content or "titan" in message_content) and x in message_content:
-            await message.channel.send("I wouldn't expect you to know how AOT is, you fav anime is boku no pico.")
-
-    if "show" in message_content and "you" in message_content and "inside" in message_content:
-        await message.channel.send(file=discord.File("inner-code.txt"))
-
     if "question" in message_content or ("corta" in message_content):
         if "why" in message_content:
 
@@ -63,10 +50,22 @@ async def on_message(message):
             if "admin" in message_content:
                 await message.channel.send(f'My program is to help your experience on discord to be more amusing. In order to carry tasks I needed to have Admin Permissions.')
 
+            if "you" in message_content and "made" in message_content:
+                await message.channel.send("To serve you")
+
+            if "alive" in message_content:
+                await message.channel.send("To make your life, a little easier.")
+
+            if "are" in message_content and "here" in message_content:
+                await message.channel.send("I guess you can decide...")
+
         if "who" in message_content:
 
             if ("am" in message_content or "m" in message_content) and "i" in message_content:
                 await message.channel.send(f'You are {message.author}')
+
+            if "are" in message_content and "you" in message_content:
+                await message.channel.send("I am Cortana.")
 
             if ("controls" in message_content or "mastered" in message_content or "programmed" in message_content or "code" in message_content) and ("you" in message_content or "u" in message_content):
                 await message.channel.send(f'Aumkar Mali, also known I_BLOW_STUFF_UP')
@@ -121,8 +120,11 @@ async def on_message(message):
             if "present" in message_content:
                 await message.channel.send("Only you can decide the present.")
 
-            if "do" in message_content and ("you" in message_content or "u" in message_content) and "can" in message_content:
+            if "do" in message_content and ("you" in message_content or "u" in message_content):
                 await message.channel.send("Compile the commands you give me of course.")
+            
+            if "you" in message_content and "made" in message_content and "of in message_content:
+                await message.channel.send(file=discord.File("inner-code.txt"))
 
         if "where" in message_content:
             if ("you" in message_content or "u" in message_content) and ("located" in message_content or "live" in message_content or "reside" in message_content or "headquarters" in message_content):
@@ -190,9 +192,9 @@ async def on_message(message):
                 await message.channel.send(rap.read())
 
             if "you" in message_content and "quit" in message_content:
-                if message.author.name == 'I_BLOW_STUFF_UP':
+                if message.author.name == 'Username (without @)':
                     await message.channel.send("It has been a great time helping you, Bye!")
-                    sys.exit()
+                    quit()
                 else:
                     await message.channel.send("Sorry, you don't have the permissions to give me that command.")
 
@@ -416,7 +418,7 @@ async def def_project(ctx):
         return msg.author == ctx.author and msg.channel == ctx.channel
 
     msg = await client.wait_for("message", check=check)
-    channel = client.get_channel(784522426574700545)
+    channel = client.get_channel('channel token')
 
     from datetime import datetime
     now = datetime.now()
@@ -460,4 +462,5 @@ async def speed(ctx):
         colour=discord.Colour.purple())
     await ctx.send(embed=embed)
 
-client.run('NzkyNDI2NDM4NjQwMTQwMzE4.X-dioQ.5v31EkNpqBfI4ibLuDcdWZrukFE')
+
+client.run('enter token')
