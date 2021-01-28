@@ -26,7 +26,7 @@ amount_del = 0
 @client.event
 async def on_ready():
     print("CORTANA ACTIVATED")
-    channel = client.get_channel(784519871857033239)
+    channel = client.get_channel('channel token')
     await channel.send("CORTANA ACTIVATED")
 
 
@@ -198,7 +198,7 @@ async def on_message(message):
                 await message.channel.send(rap.read())
 
             if "you" in message_content and "quit" in message_content:
-                if message.author.name == 'I_BLOW_STUFF_UP':
+                if message.author.name == 'Username (without @)':
                     await message.channel.send("It has been a great time helping you, Bye!")
                     quit()
                 else:
@@ -424,7 +424,7 @@ async def def_project(ctx):
         return msg.author == ctx.author and msg.channel == ctx.channel
 
     msg = await client.wait_for("message", check=check)
-    channel = client.get_channel(784522426574700545)
+    channel = client.get_channel('channel token')
 
     from datetime import datetime
     now = datetime.now()
