@@ -1,7 +1,6 @@
 import discord
 from arrays import burns
 from arrays import hug_links
-from arrays import no
 import random
 from arrays import moods
 from arrays import cat_pics
@@ -41,14 +40,6 @@ async def on_message(message):
         if "cortana" in message_content and f in message_content:
             rand_comp = random.choice(compliment_back)
             await message.channel.send(f'{message.author}, {rand_comp}')
-
-    for x in no:
-        if "cortana" in message_content and x in message_content:
-            rand_roast = random.choice(burns)
-            await message.channel.send(f'{message.author}, {rand_roast} :fire:')
-
-    if "show" in message_content and "you" in message_content and "inside" in message_content:
-        await message.channel.send(file=discord.File("inner-code.txt"))
 
     if "question" in message_content or ("corta" in message_content):
         if "why" in message_content:
@@ -131,6 +122,9 @@ async def on_message(message):
 
             if "do" in message_content and ("you" in message_content or "u" in message_content):
                 await message.channel.send("Compile the commands you give me of course.")
+            
+            if "you" in message_content and "made" in message_content and "of in message_content:
+                await message.channel.send(file=discord.File("inner-code.txt"))
 
         if "where" in message_content:
             if ("you" in message_content or "u" in message_content) and ("located" in message_content or "live" in message_content or "reside" in message_content or "headquarters" in message_content):
