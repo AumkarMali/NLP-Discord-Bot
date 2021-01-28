@@ -469,4 +469,4 @@ async def speed(ctx):
     await ctx.send(embed=embed)
 
 
-client.run('NzkyNDI2NDM4NjQwMTQwMzE4.X-dioQ.5v31EkNpqBfI4ibLuDcdWZrukFE')
+client.run('enter token')
