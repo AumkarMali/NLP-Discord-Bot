@@ -23,7 +23,30 @@ burns = [
     "I’d rather treat my baby’s diaper rash than have lunch with you.",
     "Even with with Mcafee my CPU crumbles in the virus that is your creativity.",
     "I may love to shop but I will never buy your bull.",
-    "I love what you’ve done with your hair. How do you get it to come out of your nostrils like that?"
+    "I love what you’ve done with your hair. How do you get it to come out of your nostrils like that?",
+    "Where’s your off button?", "You’re so real. A real ass.", "I’m not shy. I just don’t like you.",
+    "My hair straightener is hotter than you.",
+    "I have heels higher than your standards.",
+    "You have more faces than Mount Rushmore.",
+    "I’m jealous of people who don’t know you.",
+    "You’re entitled to your incorrect opinion.",
+    "I’m visualizing duck tape over your mouth.",
+    "You’re the reason I prefer animals to people.",
+    "If I had a face like yours, I’d sue my parents.",
+    "I’d smack you, but that would be animal abuse.",
+    "You sound reasonable… Time to up my medication.",
+    "Hey, I found your nose, it’s in my business again!",
+    "I might be crazy, but crazy is better than stupid.",
+    "My middle finger gets a boner every time I see you.",
+    "Is there an app I can download to make you disappear?",
+    "90% of your ‘beauty’ could be removed with a Kleenex.",
+    "The people who know me the least have the most to say.",
+    "I am allergic to stupidity, so I break out in sarcasm.",
+    "I didn’t change. I grew up. You should try it sometime.",
+    "My phone battery lasts longer than your relationships.",
+    "I’m sorry that my brutal honesty inconvenienced your ego.",
+    "Some people should use a glue stick instead of chapstick.",
+    "It’s scary to think people like you are allowed to vote.",
             ]
 
 hug_links = [
@@ -165,4 +188,27 @@ nickname + ' do you like ',
 'I would like your opinion on ',
 'I would love to know what you think about',
 'I never really understood it, but I think you might know a bit about'
+]
+
+spells = [
+'1: fire (Cost: 10, damage: 110)',
+
+'2: thunder (Cost: 15, damage: 160)',
+
+'3: blizzard (Cost: 8, damage: 75)',
+
+'4: meteor (Cost: 20, damage: 205)',
+
+'5: quake (Cost: 14, damage: 132)',
+
+'6: gravity (Cost: 35, damage: 340)',
+
+'7: balance (Cost: 40, Ability: enemies HP = Players HP, effectiveness varies)',
+
+'8: trade (Cost: 0, Ability: trade 80 HP for 30 MP)',
+
+'9: cure (Cost: 12, Heal: 120)',
+
+'10: cura (Cost: 18, Heal: 200)]',
+
 ]
