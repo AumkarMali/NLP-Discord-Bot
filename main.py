@@ -20,14 +20,10 @@ trainer = ChatterBotCorpusTrainer(cb)
 trainer.train("chatterbot.corpus.english")
 
 client = commands.Bot(command_prefix='!')
-anime_database = {}
 players = {}
 amount_del = 0
 rand = 0
 chat_bot_on = True
-
-goodbye = ['bye', 'cya', 'later']
-nickname = "Master"
 
 @client.event
 async def on_ready():
@@ -39,29 +35,11 @@ async def on_ready():
 async def on_message(message):
     message_content = message.content.strip().lower()
 
-
-    if "can" in message_content:
-        if "cheer" in message_content and "me" in message_content:
-            rand_cat_pic = random.choice(cat_pics)
-            await message.channel.send(rand_cat_pic)
-
         if "data" in message_content and "show" in message_content:
             await message.channel.send(message)
 
-        if "you" in message_content and "sing" in message_content:
-            count = 101
-            for x in range(100):
-                count = count - 1
-                await message.channel.send(f'{count} bottles of beer on the wall,')
-                await message.channel.send(f'{count} bottles of beer!')
-                await message.channel.send(f'Take on down,\nPass it around,')
-                await message.channel.send(
-                    f'{count} bottles of beer on the wall!\n```------------------------------------------------------------------```')
-
-            await message.channel.send("No more bottles of beer on the wall!")
-
         if "you" in message_content and "quit" in message_content:
-            if message.author.name == 'I_BLOW_STUFF_UP':
+            if message.author.name == '#ENTER ADMIN NAME':
                 await message.channel.send("It has been a great time helping you, Bye!")
                 quit()
             else:
@@ -72,7 +50,7 @@ async def on_message(message):
 @client.command()
 async def commands(ctx):
     await ctx.send(
-      f'```ini\n[Commands:]\n[!speed]\n[!time]\n[!date]\n[!ping @username]\n[!spam num]\n[!clear num]\n[!kick @username]\n[!ban @username]\n[!roast @username]\n[!hug @username]\n[!web_scrape URL]\n[!play YT.URL]\n[!leave]\n[!pause]\n[!resume]\n[!stop]\n[!weather]\n[!calc equation]\n[!speech]\n[!game]```')
+      f'```ini\n[Commands:]\n[!speed]\n[!time]\n[!date]\n[!ping @username]\n[!spam num]\n[!clear num]\n[!kick @username]\n[!ban @username]\n[!web_scrape URL]\n[!play YT.URL]\n[!leave]\n[!pause]\n[!resume]\n[!stop]\n[!weather]\n[!calc equation]\n[!speech]\n[!game]```')
 
 
 @client.command()
@@ -116,7 +94,7 @@ async def clear(ctx, *, amount):
 @client.command()
 async def kick(ctx, member: discord.Member, *, reason=None):
     try:
-        await member.kick(reason="Just for kicks")
+        await member.kick(reason="#DEFINE REASON HERE")
         await ctx.send(f'{member.mention} was kicked.')
     except:
         pass
@@ -125,7 +103,7 @@ async def kick(ctx, member: discord.Member, *, reason=None):
 @client.command()
 async def ban(ctx, member: discord.Member, *, reason=None):
     try:
-        await member.ban(reason="idek")
+        await member.ban(reason="#DEFINE REASON HERE")
         await ctx.send(f'{member.mention} was banned.')
     except:
         pass
@@ -148,23 +126,6 @@ async def date(ctx):
         from datetime import date
         today = date.today()
         await ctx.send(f'```diff\n+Current date is: {today}.```')
-    except:
-        pass
-
-@client.command()
-async def roast(message, member: discord.Member):
-    try:
-        rand_roast = random.choice(burns)
-        await message.channel.send(f'{member.mention}, {rand_roast} :joy:')
-    except:
-        pass
-
-@client.command()
-async def hug(ctx, member: discord.Member):
-    try:
-        rand_hugs = random.choice(hug_links)
-        await ctx.send(f'{rand_hugs}')
-        await ctx.send(f'{member.mention} gets a hug.')
     except:
         pass
 
@@ -256,13 +217,13 @@ async def stop(ctx):
 @client.command()
 async def weather(ctx):
     try:
-        res = requests.get('https://weather.com/weather/today/l/43.59,-79.64?par=google&temp=c')
+        res = requests.get('#ENTER WEATHER CHANNEL LINK')
         soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
         soup.select('.CurrentConditions--tempValue--3KcTQ')
 
         for i in soup.select('.CurrentConditions--tempValue--3KcTQ'):
-            await ctx.send(f'*The weather in mississauga is: {i.text}.*')
+            await ctx.send(f'*The weather in #LOCATION is: {i.text}.*')
     except:
         pass
 
@@ -294,14 +255,11 @@ async def speech(ctx):
     msg = await client.wait_for("message", check=check, timeout=30)
     inp = msg.content
 
-    if "cortana" in inp:
-      inp = inp.replace("cortana", "")
-
     await ctx.send(cb.get_response(inp))
 
     for x in goodbye:
       if x in inp:
-        await ctx.send(f'{random.choice(goodbye)}, {msg.author}')
+        await ctx.send(f'Goodbye, {msg.author}!')
         chat_bot_on = False
         return None
 
@@ -525,4 +483,4 @@ async def game(message):
             running = False
 
 
-client.run('NzkyNDI2NDM4NjQwMTQwMzE4.X-dioQ.uB86HSfV1n-Ldx0sMHesY9roKL4')
+client.run('#ENTER DISCORD API HERE')
