@@ -4,4 +4,5 @@ Discord, one of the most widely used social media platforms, excels compared to 
 
 ## Chat Bot Learning
 
-#### Response Storage
+### Response Storage
+Each key in `text.txt` is a possible response that the bot can give. 
